@@ -38,3 +38,10 @@ history flooder
 
 this bookmarklet can flood your history however many times you want. I do not recomend flooding with extremly high numbers 
 
+javascript:var num=prompt("History flood amount:");done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert("History flood successful! "+window.location.href+" now appears in your history "+num+(num==1?" time.":" times."))}
+
+inspect element
+
+this should allow you to inspect if it is blocked for you, but i have not been able to get it to work
+
+javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
