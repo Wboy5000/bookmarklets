@@ -1,7 +1,7 @@
 # bookmarklets
 this is a list of all the bookmarklets that I know of I will continue add more
 
-the way to use thesse is make a bookmark, and put the javascript as the url. To activate it just click on the bookmark if the instructions are specific then they will be mentioned by the javascript
+the way to use these is make a bookmark, and copy the javascript exactly as writen then put the javascript as the url for your bookmark. To activate it just click on the bookmark. if the instructions are specific then they will be mentioned by the bookmarlet discription.
 
 
 auto clicker bookmarklet
@@ -27,4 +27,14 @@ font bomb
 a on screen bomb will be placed when mouse clicked that can move words. this is very buggy and I do not recomend.
 
 javascript:(function () {var s = document.createElement('script');s.setAttribute('src', 'http://fontbomb.ilex.ca/js/main.js');document.body.appendChild(s);}());
+
+add skip
+
+this bookmarklet allows you to skip any add( on youtube only ).
+
+javascript:if(document.getElementsByClassName("video-ads")[0].innerHTML !==""){ var banner = false; for(var i = 0; i < document.getElementsByClassName("ytp-ad-overlay-close-button").length; i++){ document.getElementsByClassName("ytp-ad-overlay-close-button")[i].click(); banner = true;} if(banner === false){ document.getElementsByClassName("html5-main-video")[0].currentTime = document.getElementsByClassName("html5-main-video")[0].duration; document.getElementsByClassName("ytp-ad-skip-button")[0].click();} }void 0;
+
+history flooder
+
+this bookmarklet can flood your history however many times you want. I do not recomend flooding with extremly high numbers 
 
