@@ -51,3 +51,9 @@ edit element
 this allows you to edit any website you use it on but the edits don't stick if you reload the page
 
 javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0
+
+3d
+
+this bookmarklet can make almost any website 3d and has settings in the top left corner
+
+javascript:(function(){var js=document.body.appendChild(document.createElement("script"));js.onerror=function(){alert("Sorry, the script could not be loaded.")};js.src="https://rawgit.com/Krazete/bookmarklets/master/tri.js"})();
