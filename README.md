@@ -42,7 +42,12 @@ javascript:var num=prompt("Thank you for using Wboy5000 History flooder, please 
 
 inspect element
 
-this should allow you to inspect if it is blocked for you, but i have not been able to get it to work
+this should allow you to inspect if it is blocked for you, but i have not been able to get it to work reliably
 
 javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
 
+edit element
+
+this allows you to edit any website you use it on but the edits don't stick if you reload the page
+
+javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0
