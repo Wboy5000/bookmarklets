@@ -52,12 +52,6 @@ this allows you to edit any website you use it on but the edits don't stick if y
 
 javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0
 
-3d
-
-this bookmarklet can make almost any website 3d and has settings in the top left corner
-
-javascript:(function(){var js=document.body.appendChild(document.createElement("script"));js.onerror=function(){alert("Sorry, the script could not be loaded.")};js.src="https://rawgit.com/Krazete/bookmarklets/master/tri.js"})();
-
 youtube video unblocker
 
 javascript:(function () {if (window.location.toString().includes('www.youtube.com/watch?v%27)) { window.open(%27https://www.youtube-nocookie.com/embed/%27 + window.location.toString().split(%27=%27)[1]) }})()
@@ -74,3 +68,9 @@ Tab cloack
 This allows you to cloak your tab to any name and disguse it with a few things
 
 (function () {document.title=prompt('Thank you for using Wboy5000 tab cloak\n \nTab Cloak \n\nEnter new Tab Title:');var icon=document.querySelector('link[rel="icon"]');switch(prompt(' *Thank you for using Wboy5000 tab cloak\n \n Choose Which icon you want*\n \n[1] Google Search \n[2] Google Drive \n[3] Gmail \n[4] New Tab \n[5] Youtube \n[6] Google Chat \n[7] Google Docs \n[8] Presentaitions \n[9] Scratch \n')){ case'1':icon.setAttribute('href','https://www.google.com/favicon.ico');break; case'2':icon.setAttribute('href','https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png');break; case'3':icon.setAttribute('href','https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico');break; case'4':icon.setAttribute('href','https://i.imgur.com/rPKJ5NZ.png');break; case'5':icon.setAttribute('href','https://www.youtube.com/favicon.ico');break; case'6':icon.setAttribute('href','https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon_chat_r2.ico');break; case'7':icon.setAttribute('href','https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico');break; case'8':icon.setAttribute('href','https://ssl.gstatic.com/docs/presentations/images/favicon5.ico');break; case'9':icon.setAttribute('href','https://scratch.mit.edu/favicon.ico');break;}})()
+
+Crazy page
+
+You will see what this does
+
+javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){el.style[prefix + 'transform'] = 'rotate(' + (Math.floor(Math.random() * 3) - 1) + 'deg)';});});}())
