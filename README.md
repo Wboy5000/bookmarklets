@@ -82,4 +82,3 @@ the name says it all use this at your own risk
 javascript: fetch("https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js").then(r => r.text()).then(r => eval(r))
 
 credit to  ading221
-Im Gay
